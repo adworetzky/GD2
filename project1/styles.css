@@ -90,7 +90,6 @@ a {
     color: hsl(177, 30%, 28%);
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
-    font-style: underline;
     font-weight: 400;
     text-align: left;
     width: auto;
@@ -100,7 +99,6 @@ a:hover {
     color: hsl(177, 30%, 50%);
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
-    font-style: underline;
     font-weight: 400;
     text-align: left;
     width: auto;
