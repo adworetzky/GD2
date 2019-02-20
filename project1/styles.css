@@ -1,3 +1,4 @@
+/* BTS STUFF */
 *,
 *:before,
 *:after {
@@ -14,94 +15,76 @@
     clear: both;
 }
 
+/* CONTAINER FORMATING */
+
 body {
     background-color: hsl(0, 0%, 96%);
 }
 
 header {
-    width: 80%;
     margin: auto;
+    width: 80%;
 }
 
 main {
+    line-height: 1.8;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    line-height: 1.8;
 }
 
-figure {
-    width: 70%;
-    margin: auto;
-}
-
-figcaption {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-style: italic;
-    font-weight: 300;
-    color: hsl(0, 0%, 20%);
-    text-align: center;
-    width: auto;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
+/* TEXT FORMATTING */
 
 h1 {
-    margin-bottom: 30px;
+    color: hsl(177, 32%, 51%);
     font-family: 'Roboto Slab', serif;
     font-size: 62px;
     font-weight: 700;
-    color: hsl(177, 32%, 51%);
+    margin-bottom: 30px;
     text-align: left;
 }
 
 h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    color: hsl(0, 0%, 20%);
     font-family: 'Roboto Slab', serif;
     font-size: 32px;
     font-weight: 700;
-    color: hsl(0, 0%, 20%);
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 
 h3,
 h4 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    color: hsl(0, 0%, 20%);
     font-family: 'Roboto Slab', serif;
     font-size: 19px;
     font-weight: 400;
     font-style: italic;
-    color: hsl(0, 0%, 20%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+
 }
 
 p {
+    color: hsl(0, 0%, 20%);
     font-family: 'Roboto', sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;
-    color: hsl(0, 0%, 20%);
     text-align: left;
     width: auto;
-
 }
 
 ul {
+    color: hsl(0, 0%, 20%);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    color: hsl(0, 0%, 20%);
     text-align: left;
     width: 36em;
 }
-
 
 a {
     color: hsl(177, 30%, 28%);
@@ -124,13 +107,37 @@ a:hover {
 }
 
 blockquote {
+    color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    color: rgb(255, 255, 255);
     text-align: right;
     width: auto;
+}
+
+/* TAG FORMATTING */
+
+figure {
+    margin: auto;
+    width: 70%;
+}
+
+figcaption {
+    color: hsl(0, 0%, 20%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    width: auto;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
 
 iframe {
@@ -141,17 +148,18 @@ iframe {
 
 }
 
+/* CREATED CLASSES */
+
 .pullquote {
-    margin: 3%;
-    float: right;
+    background-color: hsl(177, 32%, 51%);
     box-shadow: 5px 10px hsla(0, 0%, 20%, 25%);
+    float: right;
+    margin: 3%;
     padding: 5px;
     width: 40%;
-    background-color: hsl(177, 32%, 51%);
-
 }
 
-.secondpic {
+.inline-pic {
     float: left;
     width: 40%;
     margin-right: 5%;
