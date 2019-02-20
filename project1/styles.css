@@ -1,3 +1,19 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
 body {
     background-color: hsl(0, 0%, 96%);
 }
@@ -17,7 +33,16 @@ main {
 figure {
     width: 70%;
     margin: auto;
-    /*is this the only way to center something? I feel like I'm using it a lot and don't know if there is a "hey, put this thing in the middle, yo" command */
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 300;
+    color: hsl(0, 0%, 20%);
+    text-align: center;
+    width: auto;
 }
 
 img {
@@ -28,85 +53,43 @@ img {
 }
 
 h1 {
+    margin-bottom: 30px;
     font-family: 'Roboto Slab', serif;
     font-size: 62px;
-    font-weight: bolder;
+    font-weight: 700;
     color: hsl(177, 32%, 51%);
     text-align: left;
 }
 
 h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-family: 'Roboto Slab', serif;
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     color: hsl(0, 0%, 20%);
 }
 
-h3 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    font-weight: normal;
-    color: hsl(0, 0%, 20%);
-}
-
+h3,
 h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
     color: hsl(0, 0%, 20%);
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
     color: hsl(0, 0%, 20%);
     text-align: left;
     width: auto;
 
-}
-
-q {
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    width: auto;
-}
-
-/*#video {}*/
-
-/*#wrapper {}*/
-/* I had the idea at one point to put the video and the pull quote side by side so I played with the float tag a little. I got them to sit side by side but the text just weasled its way inbetween them like they were behaving like inline photos in circa '98 microsoft word. You know? the one where typing a space after a picture caused your document to explode and the internet would catch fire. see below*/
-iframe {
-    display: block;
-    /*float: left;*/
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-
-}
-
-#pullquote {
-    margin: 10px auto 0;
-    /*float: right;*/
-    padding: 3%;
-    width: 40%;
-    background-color: hsl(177, 32%, 51%);
-    /*It feels weird to have a specified margin on only one side but it was the only way i could get space between the video and the pull quote, feels like there must be a better way to do this*/
-}
-
-figcaption {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 300;
-    color: hsl(0, 0%, 20%);
-    text-align: center;
-    width: auto;
 }
 
 ul {
@@ -119,4 +102,57 @@ ul {
     width: 36em;
 }
 
-/*ahhhhhhhhhhhhhh comment!!!!*/
+
+a {
+    color: hsl(177, 30%, 28%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-style: underline;
+    font-weight: 400;
+    text-align: left;
+    width: auto;
+}
+
+a:hover {
+    color: hsl(177, 30%, 50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-style: underline;
+    font-weight: 400;
+    text-align: left;
+    width: auto;
+}
+
+blockquote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    width: auto;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+}
+
+.pullquote {
+    margin: 3%;
+    float: right;
+    box-shadow: 5px 10px hsla(0, 0%, 20%, 25%);
+    padding: 5px;
+    width: 40%;
+    background-color: hsl(177, 32%, 51%);
+
+}
+
+.secondpic {
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+}
