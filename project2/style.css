@@ -1,0 +1,24 @@
+/*green
+hsl (91, 47%, 74%);
+dark
+hsl (0, 0%, 14%);
+light
+hsl (270, 7%, 88%);
+*/
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: hsl (270, 7%, 88%);
+
+}
+
+h3,
+p,
+.play-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.cardtop {}
