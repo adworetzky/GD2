@@ -32,14 +32,16 @@ h2 {
     font-weight: 700;
     font-size: 27px;
     color: hsl(270, 7%, 88%);
-
 }
 
 h3,
-p,
-a {
-
+p {
     font-weight: 400;
+}
+
+.year {
+    font-weight: 300;
+    color: hsl(270, 7%, 88%);
 }
 
 .movieposter {
@@ -51,13 +53,13 @@ a {
     display: block;
     position: absolute;
     z-index: 0;
-
 }
 
 .cardtop {
     width: 186px;
     margin: 20px;
-    background-color: hsl(71, 9%, 60%);
+    padding: 5px;
+    background-color: hsl(0, 0%, 14%);
     display: block;
     position: absolute;
     top: 0px;
@@ -67,12 +69,14 @@ a {
 
 .rating {
     text-align: right;
-
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(270, 7%, 88%);
 }
 
 .cardbottom {
     width: 186px;
-    height: 80px;
+    height: 70px;
     margin: 20px;
     background-color: hsl(0, 0%, 14%);
     display: block;
@@ -80,14 +84,14 @@ a {
     top: 300px;
     left: 0px;
     z-index: 10;
-
 }
 
-.play-button {
+.playbutton {
     width: 54px;
     position: absolute;
-    top: 200px;
+    top: 265px;
     left: 20px;
+    z-index: 80;
     /* width: 0;
     height: 0;
     border-top: 60px solid transparent;
@@ -99,10 +103,11 @@ a {
     left: 20px; */
 }
 
-.playtext {}
-
 .genre-tag {
-    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-size: 16px;
     color: hsl(91, 47%, 74%);
-
+    text-align: right;
 }
