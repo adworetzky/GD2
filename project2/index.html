@@ -11,20 +11,40 @@
 </head>
 
 <body>
-    <div class="cardtop">
-        <h2>Waterworld</h2>
-        <h3 class="year">1995</h3>
-        <h3 class="rating"><a href="https://www.imdb.com/title/tt0114898/"><img class="star" src="images\Asset 1.svg">6.2/10</a></h3>
+    <!-- a container for the full max width of the card space -->
+    <div class="container">
 
-    </div>
-    <figure>
-        <img class="movieposter" src="images\waterworldposter.jpg" alt="It's Kevin Costner, looking like a snack">
-        <!-- https://www.imdb.com/title/tt0114898/mediaviewer/rm2810972160 -->
-    </figure>
+        <!-- the top section of the card, title, year, and rating -->
+        <div class="cardtop">
+            <h2>Waterworld</h2>
+            <h3 class="year">1995</h3>
+            <a href="https://www.imdb.com/title/tt0114898/">
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24.307" height="23.117">
+                    <path fill="#bbdc9d" d="M12.153 0l2.869 8.83h9.285l-7.512 5.457 2.869 8.83-7.511-5.457-7.511 5.457 2.869-8.83L0 8.83h9.284L12.153 0z" />
+                </svg>
+                <h3 class="rating">6.2/10</h3>
+            </a>
+        </div>
 
-    <a href="https://www.youtube.com/watch?v=NpKbULrB9Z8"><img class="playbutton" src="images\Asset 2.svg"> </a>
-    <div class="cardbottom">
-        <p class="genre-tag"><a href"#">Action, </a><a href"#">Sci-Fi</a></p>
+        <!-- The middle section of the card, movie poster -->
+        <figure>
+            <img class="movieposter" src="images\waterworldposter.jpg" alt="It's Kevin Costner, looking like a snack">
+            <!-- https://www.imdb.com/title/tt0114898/mediaviewer/rm2810972160 -->
+        </figure>
+
+        <!-- call to action to play trailer, not placed in card bottom div because it overlaps with the movie poster -->
+        <a class="playbutton" href="https://www.youtube.com/watch?v=NpKbULrB9Z8">
+            <p class="ctatext">Play</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="54.21" height="109.99">
+                <path fill="#9db684" d="M54.21 54.21L0 109.99V0l54.21 54.21z" />
+                <path fill="#bbdc9d" d="M49.877 54.336L4.333 101.198V8.792l45.544 45.544z" />
+            </svg>
+        </a>
+
+        <!-- bottom section of the card, genre tags -->
+        <div class="cardbottom">
+            <p class="genre-tag"><a class="genre-link" href="#">Action, </a><a class="genre-link" href="#">Sci-Fi</a></p>
+        </div>
     </div>
 </body>
 
