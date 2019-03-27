@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* as small as 375, as large as 1280 */
+
+body {
+    font-family: 'Bitter', serif;
+    background: hsl(56, 41%, 93%);
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+
+    h1 {
+        font-size: 50px;
+        color: hsl(56, 41%, 93%);
+        background: hsl(203, 48%, 26%);
+        margin: 1% 0 0 0;
+        padding: 0 0 0 20%;
+    }
+
+    h2 {
+        color: hsl(203, 48%, 26%);
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(203, 48%, 10%);
+    }
+
+    .timeline-item {
+        border-left: 20px solid hsl(203, 48%, 26%);
+        max-width: 80%;
+        position: relative;
+        margin: 0;
+        padding: 0 0 10% 0;
+    }
+
+    img {
+        width: 80%;
+        max-width: 350px;
+        margin-left: 20%;
+        position: relative;
+        right: 0;
+    }
+
+    .timeline-content {
+        margin-left: 25%;
+    }
+
+    .timeline-item::before {
+        background-color: hsl(203, 48%, 26%);
+        content: "";
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        width: 20%;
+    }
+}
+
+@media (max-width: 1200px) {
