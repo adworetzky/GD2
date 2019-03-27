@@ -59,6 +59,7 @@ h2 {
     img {
         width: 80%;
         max-width: 350px;
+        min-width: 200px;
         margin-left: 20%;
         position: relative;
         right: 0;
