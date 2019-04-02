@@ -21,7 +21,6 @@ body {
     border-bottom: 69px solid hsl(203, 48%, 26%);
     font-family: 'Bitter', serif;
     margin: 0 0 1% 0;
-
 }
 
 h1,
@@ -44,6 +43,7 @@ h2 {
     border-bottom: 5px solid hsl(203, 48%, 26%);
     font-size: 35px;
     margin-top: 0;
+    min-width: 182px;
 }
 
 p {
@@ -52,21 +52,19 @@ p {
     font-weight: 400;
     max-width: 20em;
     min-width: 12em;
-
 }
 
 a {
     color: hsl(203, 48%, 35%);
     font-size: 19px;
     font-weight: 400;
-
-
 }
 
 a:hover {
     color: hsl(203, 48%, 50%);
 }
 
+/* timeline elements are broken up into evens and odds to give that staggered effect */
 .timeline-item {
     border-left: 20px solid hsl(203, 48%, 26%);
     margin: 0;
@@ -89,11 +87,10 @@ img {
     min-width: 200px;
     position: relative;
     width: 80%;
-    /* right: 0; */
 }
 
 .timeline-content {
-    margin-left: 35%;
+    margin: 0 0 20% 35%;
     position: relative;
     width: 50%;
 }
@@ -116,6 +113,7 @@ img {
     width: 30%;
 }
 
+/* RWD */
 @media(min-width: 375px) {
     img {
         margin-left: 30%;
@@ -125,6 +123,7 @@ img {
 @media (min-width: 400px) {
     h2 {
         font-size: 40px;
+        min-width: 186px;
     }
 }
 
@@ -156,16 +155,12 @@ img {
 
     .timeline-content {
         display: inline-block;
-        margin-left: 0;
-        margin-top: 15%;
+        margin: 15% 0 0 0;
         max-width: 30%;
         vertical-align: top;
-
     }
 
     .landscape {
-        margin: 10% 0 0 30%;
+        margin: 15% 0 0 30%;
     }
 }
-
-/* @media (max-width: 375px) { */
