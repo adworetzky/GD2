@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* * {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+} */
+
+/* header and nav */
+header {}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+ul {}
+
+/* banner */
+.banner {}
+
+h2 {}
+
+/*  */
+.right_border {}
+
+.left_border {}
+
+h3 {}
+
+img {}
+
+p {}
+
+.speaker-img {
+    box-shadow: -5px -5px 0 0 hsl(0, 50%, 46%);
+}
+
+/* font-family: 'Scope One', serif; */
