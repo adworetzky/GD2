@@ -7,25 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>project4</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700|Scope+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Josefin+Sans:700|Scope+One" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <h1>APDC2019</h1>
+        <h1 class="tracking-in-expand">APDC<span style="color:#293844">2019</span></h1>
         <nav>
             <ul>
-                <a href="#">
+                <a href="#mission">
                     <li class="nav_button_red">Mission</li>
                 </a>
-                <a href="#">
+                <a href="#speakers">
                     <li class="nav_button_blue">Speakers</li>
                 </a>
-                <a href="#">
+                <a href="#events">
                     <li class="nav_button_red">Events</li>
                 </a>
-                <a href="#">
-                    <li class="nav_button_blue">Buy Tickets</li>
+                <a href="#tickets">
+                    <li class="nav_button_blue">Tickets</li>
                 </a>
             </ul>
         </nav>
@@ -46,17 +47,22 @@
     </section>
 
     <!-- mission -->
-    <h3>Mission</h3>
+    <h3 id="mission">Mission</h3>
     <section class="left_border">
-        <p>NOT WRITTEN YET</p>
+        <p>Since its inception, the mission of the APDC is to educate designers on how to reach people regardless of
+            color, creed, or political ideology. With that in mind, any one in attendance of APDC must respect the
+            political ideology of any other attendees, no matter their differences. With speakers and events focused on
+            the clarity of message and the usage of today’s most advanced tools and practices, leave your party at the
+            door and remember: We are all here to educate and connect on the basis of accurate and informative
+            communications.</p>
         <img src="images\asset5.png" alt="">
     </section>
 
     <!-- speakers -->
-    <h3>Keynote Speakers</h3>
+    <h3 id="speakers">Keynote Speakers</h3>
     <section class="right_border">
         <div class="speaker_card">
-            <img class="speaker-img" src="images\asset3.png" alt="">
+            <img class="speaker-image" src="images\asset3.png" alt="">
             <h4>Scott Thomas</h4>
             <p>As the Design Director for Obama’s 2008 campaign, Scott Thomas led a now-historic political campaign, in
                 which branding, design, and the web played a truly pivotal role. Likening the experience to “building an
@@ -64,14 +70,14 @@
                 design improvements, and the importance of getting back to the hand and keeping things simple.</p>
         </div>
         <div class="speaker_card">
-            <img class="speaker-img" src="images\asset2.png" alt="">
+            <img class="speaker-image" src="images\asset2.png" alt="">
             <h4>Sam Adaramola</h4>
             <p>Born in Nigeria, raised in America, Sam is currently a full-time digital designer and marketer. He has a
                 degree in Advertising and Public relations, and also a studied film as minor in school. Formerly an
                 account executive at a global PR/Advertising firm, Sam currently works as a freelance creative.</p>
         </div>
         <div class="speaker_card">
-            <img class="speaker-img" src="images\asset1.png" alt="">
+            <img class="speaker-image" src="images\asset1.png" alt="">
             <h4>Donna Lamar</h4>
             <p>Donna started her career as a producer, loved being one and loved learning how to make things. In this,
                 she realized that the pursuit of creativity takes many forms and one of those forms needed the
@@ -80,54 +86,58 @@
         </div>
     </section>
     <!-- events -->
-    <section>
+    <h3 id="events">Events</h3>
+    <section class="left_border">
         <ul class="event_list">
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Press advertising for candidates</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Meet and greet with Scott Thomas, Design Director for the 2008 Obama Campaign</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Social Campaigns</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>The New Face of America</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>The Politics of Color</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Symbols and message: the intersection of graphics and political message</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Campaign Deliverables</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Make them Care</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>Design for the masses</li>
             </a>
-            <a href="#">
+            <a class="event_link" href="event.html">
                 <li>What did I just read?</li>
             </a>
         </ul>
     </section>
 
     <!-- buy tickets -->
-    <section>
-        <div class="ticket">
-            <p class="day_pass">1 day pass</p>
-            <p class="price">$99</p>
-        </div>
-        <div class="ticket">
-            <p class="day_pass">2 day pass</p>
-            <p class="price">$189</p>
-        </div>
-        <div class="ticket">
-            <p class="day_pass">Weekend pass</p>
-            <p class="price">$250</p>
+    <h3 id="tickets">Tickets</h3>
+    <section class="right_border">
+        <div class="ticket_wrapper">
+            <div class="ticket">
+                <p class="day_pass">1 day pass</p>
+                <p class="price">$99</p>
+            </div>
+            <div class="ticket">
+                <p class="day_pass">2 day pass</p>
+                <p class="price">$189</p>
+            </div>
+            <div class="ticket">
+                <p class="day_pass">Weekend pass</p>
+                <p class="price">$250</p>
+            </div>
         </div>
     </section>
 </body>
