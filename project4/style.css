@@ -2,6 +2,7 @@
 *:before,
 *:after {
     box-sizing: border-box;
+    transition: all 0.2s ease;
 }
 
 .clearfix::before,
@@ -14,9 +15,9 @@
     clear: both;
 }
 
-* {
+/* * {
     transition: all 0.2s ease;
-}
+} */
 
 body {
     min-width: 342px;
@@ -25,11 +26,15 @@ body {
 /* header and nav */
 
 h1 {
-    font-family: 'Francois One', sans-serif;
     color: #913131;
     display: inline-block;
     font-size: 60px;
+    font-family: 'Francois One', sans-serif;
     margin: 1% 0;
+}
+
+span {
+    color: #293844;
 }
 
 .tracking-in-expand {
@@ -80,8 +85,8 @@ h1 {
 
 nav {
     display: inline-block;
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
     min-width: 342px;
 }
 
@@ -94,10 +99,15 @@ ul {
 }
 
 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     font-family: 'Francois One', sans-serif;
     color: hsl(0, 0%, 95%);
     font-size: 18px;
-    vertical-align: middle;
+    text-decoration: none;
 }
 
 
@@ -106,7 +116,7 @@ a {
     display: inline-block;
     text-align: center;
     width: 24%;
-    margin: 0 0;
+    margin: 0;
     height: 60px;
     min-width: 80px;
 }
