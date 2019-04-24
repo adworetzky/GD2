@@ -19,8 +19,11 @@
     transition: all 0.2s ease;
 } */
 
-body {
+.the_official_angelique_site_wrapper {
     min-width: 342px;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 /* header and nav */
@@ -85,8 +88,11 @@ span {
 
 nav {
     display: inline-block;
-    margin: 0 auto;
+    margin: 0;
+    text-align: right;
     width: 100%;
+    margin: 0;
+    padding: 0;
     min-width: 342px;
 }
 
@@ -95,6 +101,7 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
+    max-width: 520px;
 
 }
 
@@ -116,9 +123,10 @@ a {
     display: inline-block;
     text-align: center;
     width: 24%;
-    margin: 0;
+    margin: 0 0;
     height: 60px;
     min-width: 80px;
+    max-width: 130px;
 }
 
 .nav_button_red:hover {
@@ -130,9 +138,10 @@ a {
     display: inline-block;
     text-align: center;
     width: 24%;
-    margin: 0;
+    margin: 0 0;
     height: 60px;
     min-width: 80px;
+    max-width: 130px;
 }
 
 .nav_button_blue:hover {
@@ -165,7 +174,7 @@ h2 {
 }
 
 .left_border {
-    border-left: 20px solid #3C5064;
+    border-left: 20px solid #913131;
     margin: 0;
     padding: 1%;
     width: 100%;
@@ -213,6 +222,7 @@ h4 {
 
 .event_list {
     width: 80%;
+    margin: 20px 0 0;
 
 }
 
@@ -222,7 +232,7 @@ h4 {
     font-weight: 700;
     color: #3C5064;
     text-decoration: none;
-    margin: 20px 20px;
+    margin: 0 0 1em;
     font-size: 18px;
 }
 
@@ -270,3 +280,68 @@ li {
 }
 
 @media(min-width: 375px) {}
+
+@media(min-width: 820px) {
+    h1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: inline-block;
+        margin: 0;
+        text-align: right;
+        padding: 0;
+    }
+
+    ul {
+        margin: 8px 0 0;
+    }
+}
+
+@media(min-width: 1250px) {
+    .left_border {
+        border-left: 20px solid #913131;
+        margin: 0;
+        padding: 1%;
+        width: 100%;
+        background: #F2F2F2;
+    }
+
+    .right_border {
+        margin: 0;
+        padding: 1%;
+        width: 100%;
+        border-right: 20px solid #3C5064;
+        background: #F2F2F2;
+    }
+
+    p {
+        display: inline-block;
+        vertical-align: top;
+        font-family: 'Scope one', serif;
+        color: #0C1114;
+        font-size: 18px;
+        max-width: 300px;
+
+    }
+
+    img {
+        margin: 18px 0 0;
+        max-width: none;
+    }
+
+    .speaker_card {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+        margin: 0 auto 100px;
+    }
+
+    .speaker_wrapper {
+        display: flex;
+        margin: 0 auto;
+    }
+}
