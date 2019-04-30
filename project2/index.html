@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>GD2_Project_2</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+    <!-- a container for the full max width of the card space -->
+    <div class="container">
+
+        <!-- the top section of the card, title, year, and rating -->
+        <div class="cardtop">
+            <h2>Waterworld</h2>
+            <h3 class="year">1995</h3>
+            <a href="https://www.imdb.com/title/tt0114898/">
+                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24.307" height="23.117">
+                    <path fill="#bbdc9d" d="M12.153 0l2.869 8.83h9.285l-7.512 5.457 2.869 8.83-7.511-5.457-7.511 5.457 2.869-8.83L0 8.83h9.284L12.153 0z" />
+                </svg>
+                <h3 class="rating">6.2/10</h3>
+            </a>
+        </div>
+
+        <!-- The middle section of the card, movie poster -->
+        <figure>
+            <img class="movieposter" src="images\waterworldposter.jpg" alt="It's Kevin Costner, looking like a snack">
+            <!-- https://www.imdb.com/title/tt0114898/mediaviewer/rm2810972160 -->
+        </figure>
+
+        <!-- call to action to play trailer, not placed in card bottom div because it overlaps with the movie poster -->
+        <a class="playbutton" href="https://www.youtube.com/watch?v=NpKbULrB9Z8">
+            <p class="ctatext">Play</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="54.21" height="109.99">
+                <path fill="#9db684" d="M54.21 54.21L0 109.99V0l54.21 54.21z" />
+                <path fill="#bbdc9d" d="M49.877 54.336L4.333 101.198V8.792l45.544 45.544z" />
+            </svg>
+        </a>
+
+        <!-- bottom section of the card, genre tags -->
+        <div class="cardbottom">
+            <p class="genre-tag"><a class="genre-link" href="#">Action, </a><a class="genre-link" href="#">Sci-Fi</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

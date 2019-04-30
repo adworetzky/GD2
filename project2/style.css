@@ -1,0 +1,143 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: hsl(270, 7%, 88%);
+    font-weight: 700;
+    font-size: 27px;
+}
+
+p {
+    font-weight: 400;
+}
+
+.container {
+    height: auto;
+    max-width: 640px;
+}
+
+.cardtop {
+    background-color: hsl(0, 0%, 14%);
+    border-radius: 10px 10px 0 0;
+    display: block;
+    height: 100px;
+    left: 0;
+    line-height: 5px;
+    margin: 20px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    z-index: 50;
+}
+
+.year {
+    color: hsl(270, 7%, 88%);
+    display: inline-block;
+    font-weight: 300;
+}
+
+.rating {
+    color: hsl(270, 7%, 88%);
+    display: inline-block;
+    font-size: 18px;
+    left: 140px;
+    position: absolute;
+    text-align: right;
+    top: 58px;
+}
+
+.rating:hover {
+    color: hsl(91, 70%, 40%);
+}
+
+.star {
+    bottom: 15px;
+    display: inline-block;
+    left: 113px;
+    position: absolute;
+}
+
+.movieposter {
+    display: block;
+    height: auto;
+    left: 0;
+    margin: 20px;
+    position: absolute;
+    top: 95px;
+    width: 200px;
+    z-index: 0;
+}
+
+
+.cardbottom {
+    background-color: hsl(0, 0%, 14%);
+    border-radius: 0 0 10px 10px;
+    display: block;
+    height: 100px;
+    margin: 20px;
+    left: 0;
+    position: absolute;
+    top: 300px;
+    width: 200px;
+    z-index: 10;
+}
+
+.playbutton {
+    left: 20px;
+    position: absolute;
+    top: 265px;
+    width: 54px;
+    z-index: 80;
+}
+
+.playbutton:hover {
+    transform: scale(1.2);
+    transform-origin: left;
+    transition: .1s ease-in-out;
+    /* we havent learned about css animation properties so there is probably a better way. Without it, it was too jumpy */
+}
+
+.ctatext {
+    bottom: 32px;
+    color: hsl(0, 0%, 14%);
+    font-weight: 700;
+    font-size: 17px;
+    left: 4px;
+    position: absolute;
+}
+
+.genre-tag {
+    color: hsl(91, 47%, 74%);
+    font-size: 16px;
+    left: 60px;
+    text-decoration: underline;
+    text-align: right;
+    top: 20px;
+    position: absolute;
+}
+
+.genre-link {
+    color: hsl(91, 47%, 74%);
+}
+
+.genre-link:hover {
+    color: hsl(91, 70%, 40%)
+}
