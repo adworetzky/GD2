@@ -15,9 +15,7 @@
     clear: both;
 }
 
-/* * {
-    transition: all 0.2s ease;
-} */
+/* STILL NEED A VARIABLE IN THE MIX, NA' MEAN */
 
 .the_official_angelique_site_wrapper {
     min-width: 342px;
@@ -40,6 +38,7 @@ span {
     color: #293844;
 }
 
+/* animation stuff */
 .tracking-in-expand {
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
