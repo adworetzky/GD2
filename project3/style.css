@@ -1,0 +1,166 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* as small as 375, as large as 1280 */
+
+body {
+    background-image: linear-gradient(hsl(56, 41%, 93%), hsl(208, 77%, 90%));
+    border-bottom: 69px solid hsl(203, 48%, 26%);
+    font-family: 'Bitter', serif;
+    margin: 0 0 1% 0;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+
+
+h1 {
+    background: hsl(203, 48%, 26%);
+    color: hsl(56, 41%, 93%);
+    font-size: 50px;
+    margin: 1% 0 0 0;
+    padding: 0 0 0 15%;
+}
+
+h2 {
+    color: hsl(203, 48%, 26%);
+    border-bottom: 5px solid hsl(203, 48%, 26%);
+    font-size: 35px;
+    margin-top: 0;
+    min-width: 182px;
+}
+
+p {
+    color: hsl(203, 48%, 20%);
+    font-size: 19px;
+    font-weight: 400;
+    max-width: 20em;
+    min-width: 12em;
+}
+
+a {
+    color: hsl(203, 48%, 35%);
+    font-size: 19px;
+    font-weight: 400;
+}
+
+a:hover {
+    color: hsl(203, 48%, 50%);
+}
+
+/* timeline elements are broken up into evens and odds to give that staggered effect */
+.timeline-item {
+    border-left: 20px solid hsl(203, 48%, 26%);
+    margin: 0;
+    max-width: 80%;
+    padding: 0 0 5% 0;
+    position: relative;
+}
+
+.timeline-item-odd {
+    border-left: 20px solid hsl(203, 48%, 26%);
+    margin: 0;
+    max-width: 80%;
+    padding: 0 0 5% 0;
+    position: relative;
+}
+
+img {
+    margin-left: 45%;
+    max-width: 350px;
+    min-width: 200px;
+    position: relative;
+    width: 80%;
+}
+
+.timeline-content {
+    margin: 0 0 20% 35%;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item::before {
+    background-color: hsl(203, 48%, 26%);
+    content: "";
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    width: 30%;
+}
+
+.timeline-item-odd::before {
+    background-color: hsl(203, 48%, 26%);
+    content: "";
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    width: 30%;
+}
+
+/* RWD */
+@media(min-width: 375px) {
+    img {
+        margin-left: 30%;
+    }
+}
+
+@media (min-width: 400px) {
+    h2 {
+        font-size: 40px;
+        min-width: 186px;
+    }
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    img {
+        margin-left: 40%;
+    }
+}
+
+@media (min-width: 1148px) {
+    .timeline-item {
+        max-width: 100%;
+        padding: 0 0 1% 0;
+    }
+
+    .timeline-item-odd {
+        max-width: 80%;
+        padding: 0 0 1% 0;
+    }
+
+    img {
+        display: inline-block;
+        margin: 5% 0 0 30%;
+    }
+
+    .timeline-content {
+        display: inline-block;
+        margin: 15% 0 0 0;
+        max-width: 30%;
+        vertical-align: top;
+    }
+
+    .landscape {
+        margin: 10% 0 0 30%;
+    }
+}
